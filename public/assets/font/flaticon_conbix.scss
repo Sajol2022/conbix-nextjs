@@ -1,0 +1,413 @@
+$flaticon_conbix-font: "flaticon_conbix";
+
+@font-face {
+    font-family: $flaticon_conbix-font;
+    src: url("./flaticon_conbix.ttf?0297d7abbbc8bda99826a331dd3139fa") format("truetype"),
+url("./flaticon_conbix.woff?0297d7abbbc8bda99826a331dd3139fa") format("woff"),
+url("./flaticon_conbix.woff2?0297d7abbbc8bda99826a331dd3139fa") format("woff2"),
+url("./flaticon_conbix.eot?0297d7abbbc8bda99826a331dd3139fa#iefix") format("embedded-opentype"),
+url("./flaticon_conbix.svg?0297d7abbbc8bda99826a331dd3139fa#flaticon_conbix") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_conbix !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_conbix-map: (
+    "technology": "\f101",
+    "costumer": "\f102",
+    "freight": "\f103",
+    "consultant-services": "\f104",
+    "creative-process": "\f105",
+    "data-science": "\f106",
+    "machine-learning": "\f107",
+    "check-mark": "\f108",
+    "ab-testing": "\f109",
+    "download-pdf": "\f10a",
+    "social-media-marketing": "\f10b",
+    "right-up": "\f10c",
+    "solution": "\f10d",
+    "building": "\f10e",
+    "technical-support": "\f10f",
+    "financial-profit": "\f110",
+    "seo": "\f111",
+    "online-advertising": "\f112",
+    "question-mark": "\f113",
+    "prototype": "\f114",
+    "house": "\f115",
+    "apartment": "\f116",
+    "seo-1": "\f117",
+    "system": "\f118",
+    "completed-task": "\f119",
+    "project": "\f11a",
+    "information-technology": "\f11b",
+    "hand-saw": "\f11c",
+    "down-right-arrow": "\f11d",
+    "hand": "\f11e",
+    "barn": "\f11f",
+    "it-support": "\f120",
+    "service": "\f121",
+    "social-media-marketing-1": "\f122",
+    "repairing": "\f123",
+    "infrastructure": "\f124",
+    "professional-services": "\f125",
+    "slash": "\f126",
+    "strong-wind": "\f127",
+    "phone-call": "\f128",
+    "it-department": "\f129",
+    "writing": "\f12a",
+    "growth-chart": "\f12b",
+    "ux-design": "\f12c",
+    "secure-data": "\f12d",
+    "creative-thinking": "\f12e",
+    "slash-1": "\f12f",
+    "ui-design": "\f130",
+    "save-money": "\f131",
+    "digital-marketing": "\f132",
+    "carpentry": "\f133",
+    "solution-1": "\f134",
+    "computer": "\f135",
+    "property": "\f136",
+    "project-management": "\f137",
+    "team": "\f138",
+    "trophy": "\f139",
+    "computer-1": "\f13a",
+    "notes": "\f13b",
+    "support": "\f13c",
+    "location": "\f13d",
+    "menu": "\f13e",
+    "tick": "\f13f",
+    "analysis": "\f140",
+    "human-resources": "\f141",
+    "money-bag": "\f142",
+    "check": "\f143",
+    "software-development": "\f144",
+    "right": "\f145",
+    "consultant": "\f146",
+    "technical-support-1": "\f147",
+    "corporate": "\f148",
+    "coding": "\f149",
+    "dots-menu": "\f14a",
+    "city": "\f14b",
+    "statistics": "\f14c",
+    "data": "\f14d",
+    "customer-service": "\f14e",
+    "customer-review": "\f14f",
+    "conversation": "\f150",
+    "software": "\f151",
+    "next": "\f152",
+    "resource": "\f153",
+    "email": "\f154",
+    "link": "\f155",
+    "management": "\f156",
+    "brand": "\f157",
+    "server": "\f158",
+    "truck": "\f159",
+    "right-arrows": "\f15a",
+    "app-development": "\f15b",
+    "creative": "\f15c",
+    "analysis-1": "\f15d",
+    "design-thinking": "\f15e",
+    "sea": "\f15f",
+    "vector": "\f160",
+    "monitor": "\f161",
+);
+
+.flaticon-technology:before {
+    content: map-get($flaticon_conbix-map, "technology");
+}
+.flaticon-costumer:before {
+    content: map-get($flaticon_conbix-map, "costumer");
+}
+.flaticon-freight:before {
+    content: map-get($flaticon_conbix-map, "freight");
+}
+.flaticon-consultant-services:before {
+    content: map-get($flaticon_conbix-map, "consultant-services");
+}
+.flaticon-creative-process:before {
+    content: map-get($flaticon_conbix-map, "creative-process");
+}
+.flaticon-data-science:before {
+    content: map-get($flaticon_conbix-map, "data-science");
+}
+.flaticon-machine-learning:before {
+    content: map-get($flaticon_conbix-map, "machine-learning");
+}
+.flaticon-check-mark:before {
+    content: map-get($flaticon_conbix-map, "check-mark");
+}
+.flaticon-ab-testing:before {
+    content: map-get($flaticon_conbix-map, "ab-testing");
+}
+.flaticon-download-pdf:before {
+    content: map-get($flaticon_conbix-map, "download-pdf");
+}
+.flaticon-social-media-marketing:before {
+    content: map-get($flaticon_conbix-map, "social-media-marketing");
+}
+.flaticon-right-up:before {
+    content: map-get($flaticon_conbix-map, "right-up");
+}
+.flaticon-solution:before {
+    content: map-get($flaticon_conbix-map, "solution");
+}
+.flaticon-building:before {
+    content: map-get($flaticon_conbix-map, "building");
+}
+.flaticon-technical-support:before {
+    content: map-get($flaticon_conbix-map, "technical-support");
+}
+.flaticon-financial-profit:before {
+    content: map-get($flaticon_conbix-map, "financial-profit");
+}
+.flaticon-seo:before {
+    content: map-get($flaticon_conbix-map, "seo");
+}
+.flaticon-online-advertising:before {
+    content: map-get($flaticon_conbix-map, "online-advertising");
+}
+.flaticon-question-mark:before {
+    content: map-get($flaticon_conbix-map, "question-mark");
+}
+.flaticon-prototype:before {
+    content: map-get($flaticon_conbix-map, "prototype");
+}
+.flaticon-house:before {
+    content: map-get($flaticon_conbix-map, "house");
+}
+.flaticon-apartment:before {
+    content: map-get($flaticon_conbix-map, "apartment");
+}
+.flaticon-seo-1:before {
+    content: map-get($flaticon_conbix-map, "seo-1");
+}
+.flaticon-system:before {
+    content: map-get($flaticon_conbix-map, "system");
+}
+.flaticon-completed-task:before {
+    content: map-get($flaticon_conbix-map, "completed-task");
+}
+.flaticon-project:before {
+    content: map-get($flaticon_conbix-map, "project");
+}
+.flaticon-information-technology:before {
+    content: map-get($flaticon_conbix-map, "information-technology");
+}
+.flaticon-hand-saw:before {
+    content: map-get($flaticon_conbix-map, "hand-saw");
+}
+.flaticon-down-right-arrow:before {
+    content: map-get($flaticon_conbix-map, "down-right-arrow");
+}
+.flaticon-hand:before {
+    content: map-get($flaticon_conbix-map, "hand");
+}
+.flaticon-barn:before {
+    content: map-get($flaticon_conbix-map, "barn");
+}
+.flaticon-it-support:before {
+    content: map-get($flaticon_conbix-map, "it-support");
+}
+.flaticon-service:before {
+    content: map-get($flaticon_conbix-map, "service");
+}
+.flaticon-social-media-marketing-1:before {
+    content: map-get($flaticon_conbix-map, "social-media-marketing-1");
+}
+.flaticon-repairing:before {
+    content: map-get($flaticon_conbix-map, "repairing");
+}
+.flaticon-infrastructure:before {
+    content: map-get($flaticon_conbix-map, "infrastructure");
+}
+.flaticon-professional-services:before {
+    content: map-get($flaticon_conbix-map, "professional-services");
+}
+.flaticon-slash:before {
+    content: map-get($flaticon_conbix-map, "slash");
+}
+.flaticon-strong-wind:before {
+    content: map-get($flaticon_conbix-map, "strong-wind");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon_conbix-map, "phone-call");
+}
+.flaticon-it-department:before {
+    content: map-get($flaticon_conbix-map, "it-department");
+}
+.flaticon-writing:before {
+    content: map-get($flaticon_conbix-map, "writing");
+}
+.flaticon-growth-chart:before {
+    content: map-get($flaticon_conbix-map, "growth-chart");
+}
+.flaticon-ux-design:before {
+    content: map-get($flaticon_conbix-map, "ux-design");
+}
+.flaticon-secure-data:before {
+    content: map-get($flaticon_conbix-map, "secure-data");
+}
+.flaticon-creative-thinking:before {
+    content: map-get($flaticon_conbix-map, "creative-thinking");
+}
+.flaticon-slash-1:before {
+    content: map-get($flaticon_conbix-map, "slash-1");
+}
+.flaticon-ui-design:before {
+    content: map-get($flaticon_conbix-map, "ui-design");
+}
+.flaticon-save-money:before {
+    content: map-get($flaticon_conbix-map, "save-money");
+}
+.flaticon-digital-marketing:before {
+    content: map-get($flaticon_conbix-map, "digital-marketing");
+}
+.flaticon-carpentry:before {
+    content: map-get($flaticon_conbix-map, "carpentry");
+}
+.flaticon-solution-1:before {
+    content: map-get($flaticon_conbix-map, "solution-1");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon_conbix-map, "computer");
+}
+.flaticon-property:before {
+    content: map-get($flaticon_conbix-map, "property");
+}
+.flaticon-project-management:before {
+    content: map-get($flaticon_conbix-map, "project-management");
+}
+.flaticon-team:before {
+    content: map-get($flaticon_conbix-map, "team");
+}
+.flaticon-trophy:before {
+    content: map-get($flaticon_conbix-map, "trophy");
+}
+.flaticon-computer-1:before {
+    content: map-get($flaticon_conbix-map, "computer-1");
+}
+.flaticon-notes:before {
+    content: map-get($flaticon_conbix-map, "notes");
+}
+.flaticon-support:before {
+    content: map-get($flaticon_conbix-map, "support");
+}
+.flaticon-location:before {
+    content: map-get($flaticon_conbix-map, "location");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon_conbix-map, "menu");
+}
+.flaticon-tick:before {
+    content: map-get($flaticon_conbix-map, "tick");
+}
+.flaticon-analysis:before {
+    content: map-get($flaticon_conbix-map, "analysis");
+}
+.flaticon-human-resources:before {
+    content: map-get($flaticon_conbix-map, "human-resources");
+}
+.flaticon-money-bag:before {
+    content: map-get($flaticon_conbix-map, "money-bag");
+}
+.flaticon-check:before {
+    content: map-get($flaticon_conbix-map, "check");
+}
+.flaticon-software-development:before {
+    content: map-get($flaticon_conbix-map, "software-development");
+}
+.flaticon-right:before {
+    content: map-get($flaticon_conbix-map, "right");
+}
+.flaticon-consultant:before {
+    content: map-get($flaticon_conbix-map, "consultant");
+}
+.flaticon-technical-support-1:before {
+    content: map-get($flaticon_conbix-map, "technical-support-1");
+}
+.flaticon-corporate:before {
+    content: map-get($flaticon_conbix-map, "corporate");
+}
+.flaticon-coding:before {
+    content: map-get($flaticon_conbix-map, "coding");
+}
+.flaticon-dots-menu:before {
+    content: map-get($flaticon_conbix-map, "dots-menu");
+}
+.flaticon-city:before {
+    content: map-get($flaticon_conbix-map, "city");
+}
+.flaticon-statistics:before {
+    content: map-get($flaticon_conbix-map, "statistics");
+}
+.flaticon-data:before {
+    content: map-get($flaticon_conbix-map, "data");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon_conbix-map, "customer-service");
+}
+.flaticon-customer-review:before {
+    content: map-get($flaticon_conbix-map, "customer-review");
+}
+.flaticon-conversation:before {
+    content: map-get($flaticon_conbix-map, "conversation");
+}
+.flaticon-software:before {
+    content: map-get($flaticon_conbix-map, "software");
+}
+.flaticon-next:before {
+    content: map-get($flaticon_conbix-map, "next");
+}
+.flaticon-resource:before {
+    content: map-get($flaticon_conbix-map, "resource");
+}
+.flaticon-email:before {
+    content: map-get($flaticon_conbix-map, "email");
+}
+.flaticon-link:before {
+    content: map-get($flaticon_conbix-map, "link");
+}
+.flaticon-management:before {
+    content: map-get($flaticon_conbix-map, "management");
+}
+.flaticon-brand:before {
+    content: map-get($flaticon_conbix-map, "brand");
+}
+.flaticon-server:before {
+    content: map-get($flaticon_conbix-map, "server");
+}
+.flaticon-truck:before {
+    content: map-get($flaticon_conbix-map, "truck");
+}
+.flaticon-right-arrows:before {
+    content: map-get($flaticon_conbix-map, "right-arrows");
+}
+.flaticon-app-development:before {
+    content: map-get($flaticon_conbix-map, "app-development");
+}
+.flaticon-creative:before {
+    content: map-get($flaticon_conbix-map, "creative");
+}
+.flaticon-analysis-1:before {
+    content: map-get($flaticon_conbix-map, "analysis-1");
+}
+.flaticon-design-thinking:before {
+    content: map-get($flaticon_conbix-map, "design-thinking");
+}
+.flaticon-sea:before {
+    content: map-get($flaticon_conbix-map, "sea");
+}
+.flaticon-vector:before {
+    content: map-get($flaticon_conbix-map, "vector");
+}
+.flaticon-monitor:before {
+    content: map-get($flaticon_conbix-map, "monitor");
+}

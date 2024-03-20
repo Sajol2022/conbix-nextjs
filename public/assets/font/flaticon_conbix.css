@@ -1,0 +1,402 @@
+@font-face {
+  font-family: "flaticon_conbix";
+  src: url("./flaticon_conbix.ttf?0297d7abbbc8bda99826a331dd3139fa") format("truetype"), url("./flaticon_conbix.woff?0297d7abbbc8bda99826a331dd3139fa") format("woff"), url("./flaticon_conbix.woff2?0297d7abbbc8bda99826a331dd3139fa") format("woff2"), url("./flaticon_conbix.eot?0297d7abbbc8bda99826a331dd3139fa#iefix") format("embedded-opentype"), url("./flaticon_conbix.svg?0297d7abbbc8bda99826a331dd3139fa#flaticon_conbix") format("svg");
+}
+i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon_conbix !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-technology:before {
+  content: "\f101";
+}
+
+.flaticon-costumer:before {
+  content: "\f102";
+}
+
+.flaticon-freight:before {
+  content: "\f103";
+}
+
+.flaticon-consultant-services:before {
+  content: "\f104";
+}
+
+.flaticon-creative-process:before {
+  content: "\f105";
+}
+
+.flaticon-data-science:before {
+  content: "\f106";
+}
+
+.flaticon-machine-learning:before {
+  content: "\f107";
+}
+
+.flaticon-check-mark:before {
+  content: "\f108";
+}
+
+.flaticon-ab-testing:before {
+  content: "\f109";
+}
+
+.flaticon-download-pdf:before {
+  content: "\f10a";
+}
+
+.flaticon-social-media-marketing:before {
+  content: "\f10b";
+}
+
+.flaticon-right-up:before {
+  content: "\f10c";
+}
+
+.flaticon-solution:before {
+  content: "\f10d";
+}
+
+.flaticon-building:before {
+  content: "\f10e";
+}
+
+.flaticon-technical-support:before {
+  content: "\f10f";
+}
+
+.flaticon-financial-profit:before {
+  content: "\f110";
+}
+
+.flaticon-seo:before {
+  content: "\f111";
+}
+
+.flaticon-online-advertising:before {
+  content: "\f112";
+}
+
+.flaticon-question-mark:before {
+  content: "\f113";
+}
+
+.flaticon-prototype:before {
+  content: "\f114";
+}
+
+.flaticon-house:before {
+  content: "\f115";
+}
+
+.flaticon-apartment:before {
+  content: "\f116";
+}
+
+.flaticon-seo-1:before {
+  content: "\f117";
+}
+
+.flaticon-system:before {
+  content: "\f118";
+}
+
+.flaticon-completed-task:before {
+  content: "\f119";
+}
+
+.flaticon-project:before {
+  content: "\f11a";
+}
+
+.flaticon-information-technology:before {
+  content: "\f11b";
+}
+
+.flaticon-hand-saw:before {
+  content: "\f11c";
+}
+
+.flaticon-down-right-arrow:before {
+  content: "\f11d";
+}
+
+.flaticon-hand:before {
+  content: "\f11e";
+}
+
+.flaticon-barn:before {
+  content: "\f11f";
+}
+
+.flaticon-it-support:before {
+  content: "\f120";
+}
+
+.flaticon-service:before {
+  content: "\f121";
+}
+
+.flaticon-social-media-marketing-1:before {
+  content: "\f122";
+}
+
+.flaticon-repairing:before {
+  content: "\f123";
+}
+
+.flaticon-infrastructure:before {
+  content: "\f124";
+}
+
+.flaticon-professional-services:before {
+  content: "\f125";
+}
+
+.flaticon-slash:before {
+  content: "\f126";
+}
+
+.flaticon-strong-wind:before {
+  content: "\f127";
+}
+
+.flaticon-phone-call:before {
+  content: "\f128";
+}
+
+.flaticon-it-department:before {
+  content: "\f129";
+}
+
+.flaticon-writing:before {
+  content: "\f12a";
+}
+
+.flaticon-growth-chart:before {
+  content: "\f12b";
+}
+
+.flaticon-ux-design:before {
+  content: "\f12c";
+}
+
+.flaticon-secure-data:before {
+  content: "\f12d";
+}
+
+.flaticon-creative-thinking:before {
+  content: "\f12e";
+}
+
+.flaticon-slash-1:before {
+  content: "\f12f";
+}
+
+.flaticon-ui-design:before {
+  content: "\f130";
+}
+
+.flaticon-save-money:before {
+  content: "\f131";
+}
+
+.flaticon-digital-marketing:before {
+  content: "\f132";
+}
+
+.flaticon-carpentry:before {
+  content: "\f133";
+}
+
+.flaticon-solution-1:before {
+  content: "\f134";
+}
+
+.flaticon-computer:before {
+  content: "\f135";
+}
+
+.flaticon-property:before {
+  content: "\f136";
+}
+
+.flaticon-project-management:before {
+  content: "\f137";
+}
+
+.flaticon-team:before {
+  content: "\f138";
+}
+
+.flaticon-trophy:before {
+  content: "\f139";
+}
+
+.flaticon-computer-1:before {
+  content: "\f13a";
+}
+
+.flaticon-notes:before {
+  content: "\f13b";
+}
+
+.flaticon-support:before {
+  content: "\f13c";
+}
+
+.flaticon-location:before {
+  content: "\f13d";
+}
+
+.flaticon-menu:before {
+  content: "\f13e";
+}
+
+.flaticon-tick:before {
+  content: "\f13f";
+}
+
+.flaticon-analysis:before {
+  content: "\f140";
+}
+
+.flaticon-human-resources:before {
+  content: "\f141";
+}
+
+.flaticon-money-bag:before {
+  content: "\f142";
+}
+
+.flaticon-check:before {
+  content: "\f143";
+}
+
+.flaticon-software-development:before {
+  content: "\f144";
+}
+
+.flaticon-right:before {
+  content: "\f145";
+}
+
+.flaticon-consultant:before {
+  content: "\f146";
+}
+
+.flaticon-technical-support-1:before {
+  content: "\f147";
+}
+
+.flaticon-corporate:before {
+  content: "\f148";
+}
+
+.flaticon-coding:before {
+  content: "\f149";
+}
+
+.flaticon-dots-menu:before {
+  content: "\f14a";
+}
+
+.flaticon-city:before {
+  content: "\f14b";
+}
+
+.flaticon-statistics:before {
+  content: "\f14c";
+}
+
+.flaticon-data:before {
+  content: "\f14d";
+}
+
+.flaticon-customer-service:before {
+  content: "\f14e";
+}
+
+.flaticon-customer-review:before {
+  content: "\f14f";
+}
+
+.flaticon-conversation:before {
+  content: "\f150";
+}
+
+.flaticon-software:before {
+  content: "\f151";
+}
+
+.flaticon-next:before {
+  content: "\f152";
+}
+
+.flaticon-resource:before {
+  content: "\f153";
+}
+
+.flaticon-email:before {
+  content: "\f154";
+}
+
+.flaticon-link:before {
+  content: "\f155";
+}
+
+.flaticon-management:before {
+  content: "\f156";
+}
+
+.flaticon-brand:before {
+  content: "\f157";
+}
+
+.flaticon-server:before {
+  content: "\f158";
+}
+
+.flaticon-truck:before {
+  content: "\f159";
+}
+
+.flaticon-right-arrows:before {
+  content: "\f15a";
+}
+
+.flaticon-app-development:before {
+  content: "\f15b";
+}
+
+.flaticon-creative:before {
+  content: "\f15c";
+}
+
+.flaticon-analysis-1:before {
+  content: "\f15d";
+}
+
+.flaticon-design-thinking:before {
+  content: "\f15e";
+}
+
+.flaticon-sea:before {
+  content: "\f15f";
+}
+
+.flaticon-vector:before {
+  content: "\f160";
+}
+
+.flaticon-monitor:before {
+  content: "\f161";
+}/*# sourceMappingURL=flaticon_conbix.css.map */

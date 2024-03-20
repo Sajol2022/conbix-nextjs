@@ -1,0 +1,214 @@
+/*==========================================================================
+FAQ CSS
+==========================================================================*/
+.faq__area {
+    &-item {
+        border: 1px solid var(--border-color-1);
+        margin-bottom: 20px;        
+        border-radius: 5px;
+        &:last-child {
+            margin: 0;
+        }
+        h6 {
+            font-size: 18px;
+            line-height: 28px;
+            padding: 16px 0;
+            margin: 0 30px;
+            cursor: pointer;
+        }
+        .icon {
+            position: relative;
+            &::after {
+                content: "\f067";
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 300;
+                position: absolute;
+                color: var(--primary-color-3);
+                right: 0;
+            }
+            &:not(.collapsed)::after {
+                content: "\f068";
+            } 
+            &.page::after {
+                color: var(--primary-color-1);
+            }
+        }    
+        &-body {
+            p {
+                margin-bottom: 0;
+                padding: 0 30px 30px 30px;
+            }
+        }
+    }
+}
+h6.icon.collapsed {
+    width: initial !important;
+}
+/*==========================================================================
+FAQ Two CSS
+==========================================================================*/
+.faq__two {
+    &-left {
+        margin-right: 70px;
+        &-image {
+            position: relative;
+            padding-bottom: 90px;
+            &-one {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            &-question {
+                position: absolute;
+                top: 35px;
+                right: 70px;
+                background: var(--bg-heading-color);
+                padding: 30px;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                h6 {
+                    color: var(--text-white);
+                    max-width: 150px;
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .faq__two {
+        &-left {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 520px) {
+    .faq__two {
+        &-left {
+            &-image {
+                img {
+                    max-width: 280px;
+                }
+                &-question {
+                    right: 20px;
+                }
+            }
+        }
+    }
+}
+
+/*==========================================================================
+* Responsive Menu Sidebar CSS
+==========================================================================*/
+.menu__bar {
+    display: none;
+    &-popup {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 100%;
+        z-index: 9999;
+        transition: 0.5s;
+        background: var(--bg-heading-color);
+        padding: 50px;
+        display: none; 
+        transform: translateX(-100%);
+        &.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 45px;
+        }
+        .close {
+            transform: rotate(0);
+            &:hover {
+                animation: rotate 0.4s ease 0s;			
+            }
+            i {
+                background: var(--primary-color-1);
+                width: 40px;
+                color: var(--text-white);
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                display: block;
+            }
+        }
+        .logo {
+            > a img {
+                max-width: 160px;
+            }
+        }
+        & .two {
+            .menu__bar-popup {
+                &-close i {
+                    background: var(--primary-color-2);
+                }
+                &-left-social ul li a:hover {
+                    color: var(--primary-color-2);
+                }
+            }
+            .mean-container .mean-nav ul li a {
+                &.mean-expand:hover {
+                    background: var(--primary-color-2);
+                }
+                &:hover {
+                    color: var(--primary-color-2);
+                }
+            }
+        }
+        &.three {
+            .menu__bar-popup {
+                &-close i {
+                    background: var(--primary-color-3);
+                }
+                &-left-social ul li a:hover {
+                    color: var(--primary-color-3);
+                }
+            }
+            .mean-container .mean-nav ul li a {
+                &.mean-expand:hover {
+                    background: var(--primary-color-3);
+                }
+                &:hover {
+                    color: var(--primary-color-3);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .menu__bar {
+        display: block;
+        &-popup {
+            display: block; 
+        }
+    }
+}
+@media (max-width: 767px) {
+    .menu__bar {
+        &-popup {
+            width: 100%;
+            padding: 40px 30px;
+        }
+    }
+}
+@media (max-width: 359px) {
+    .menu__bar {
+        &-popup {
+            padding: 30px 20px;
+        }
+    }
+}

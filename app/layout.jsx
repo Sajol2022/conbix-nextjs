@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from 'react';
-// import "./styles.css";
-// import SwitchTab from '@/components/pages/common/dark-light';
+import "./globals.css";
+import SwitchTab from '@/components/pages/common/dark-light';
 
 export default function RootLayout({ children }) {
     useEffect(() => {
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
                 <link rel='icon' type='image/png' href='../favicon.ico' />
             </head>
             <body>
-                {/* <SwitchTab /> */}
+                <SwitchTab />
                 {children}
             </body>
         </html>
