@@ -296,6 +296,7 @@ Banner Three CSS
                         width: 60px;
                         height: 60px;
                         line-height: 60px;
+                        cursor: pointer;
                     }
                     &:hover {
                         &::after {
@@ -312,7 +313,7 @@ Banner Three CSS
             }
         }
     }
-    & .swiper-pagination {
+    & .banner_pagination {
         position: absolute;
         left: -110px;
         top: 57%;
@@ -323,6 +324,7 @@ Banner Three CSS
             height: 6px;
             background: var(--primary-color-3);
             opacity: 1;
+            display: block;
         }
         .swiper-pagination-bullet {
             margin: 0;
@@ -411,7 +413,7 @@ Banner Three CSS
             } 
         }
     }
-    .banner__three .swiper-pagination {
+    .banner__three .banner_pagination {
         left: -50px;
     }      
 }
@@ -450,6 +452,9 @@ Banner Three CSS
     }
     .banner__three {
         padding-top: 270px;
+        &-image {
+            margin-right: 0;
+        }
     }  
 }
 @media (max-width: 767px) {
@@ -484,7 +489,7 @@ Banner Three CSS
                 }
             }
         }
-        .swiper-pagination {
+        .banner_pagination {
             position: initial;
             margin-top: 35px;
             transform: initial;
@@ -610,7 +615,7 @@ Banner Four CSS
             } 
         }
     }
-    .banner__three .swiper-pagination {
+    .banner__three .banner_pagination {
         left: -50px;
     }      
 }

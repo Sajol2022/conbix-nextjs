@@ -25,7 +25,7 @@ const BannerTwo = () => {
 		<>
 			<div className="banner__two swiper banner-two-slider">
 			<Swiper modules={[EffectFade, Autoplay, Navigation]} {...slideControl} >
-			<SwiperSlide>
+				<SwiperSlide>
 					<div className="banner__two-image" style={{backgroundImage: `url(${bannerBg1.src})`}}>
 						<div className="container">
 							<div className="row">

@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------
 
-Template Name:  Conbix - Business Consulting HTML5 Template
+Template Name:  Conbix - Business Consulting Next js Template
 Author:  ThemeOri
 Author URI: http://themeori.com
 Version: 1.0.2
@@ -4866,6 +4866,7 @@ Banner Three CSS
   width: 60px;
   height: 60px;
   line-height: 60px;
+  cursor: pointer;
 }
 .banner__three-title-bottom-video-icon:hover::after {
   animation: none;
@@ -4876,33 +4877,34 @@ Banner Three CSS
   line-height: 26px;
   max-width: 125px;
 }
-.banner__three .swiper-pagination {
+.banner__three .banner_pagination {
   position: absolute;
   left: -110px;
   top: 57%;
   transform: translateY(-50%);
   z-index: -1;
 }
-.banner__three .swiper-pagination span {
+.banner__three .banner_pagination span {
   width: 6px;
   height: 6px;
   background: var(--primary-color-3);
   opacity: 1;
+  display: block;
 }
-.banner__three .swiper-pagination .swiper-pagination-bullet {
+.banner__three .banner_pagination .swiper-pagination-bullet {
   margin: 0;
   margin-bottom: 18px;
   position: relative;
   margin-left: 9px;
 }
-.banner__three .swiper-pagination .swiper-pagination-bullet-active {
+.banner__three .banner_pagination .swiper-pagination-bullet-active {
   background: none;
   border: 1px solid var(--primary-color-3);
   width: 24px;
   height: 24px;
   margin-left: 0;
 }
-.banner__three .swiper-pagination .swiper-pagination-bullet-active::before {
+.banner__three .banner_pagination .swiper-pagination-bullet-active::before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -4911,7 +4913,7 @@ Banner Three CSS
   width: 28px;
   height: 21px;
 }
-.banner__three .swiper-pagination .swiper-pagination-bullet:last-child {
+.banner__three .banner_pagination .swiper-pagination-bullet:last-child {
   margin-bottom: 0;
 }
 .banner__three-image {
@@ -4983,7 +4985,7 @@ Banner Three CSS
   .banner__two-arrow-next {
     right: 65px;
   }
-  .banner__three .swiper-pagination {
+  .banner__three .banner_pagination {
     left: -50px;
   }
 }
@@ -5013,6 +5015,9 @@ Banner Three CSS
   .banner__three {
     padding-top: 270px;
   }
+  .banner__three-image {
+    margin-right: 0;
+  }
 }
 @media (max-width: 767px) {
   .banner__two-content h1 {
@@ -5041,26 +5046,26 @@ Banner Three CSS
   .banner__three-title-bottom-video h6 {
     text-align: left;
   }
-  .banner__three .swiper-pagination {
+  .banner__three .banner_pagination {
     position: initial;
     margin-top: 35px;
     transform: initial;
   }
-  .banner__three .swiper-pagination span {
+  .banner__three .banner_pagination span {
     display: inline-block;
   }
-  .banner__three .swiper-pagination .swiper-pagination-bullet {
+  .banner__three .banner_pagination .swiper-pagination-bullet {
     margin: 0;
     margin-right: 18px;
     margin-bottom: 9px;
   }
-  .banner__three .swiper-pagination .swiper-pagination-bullet-active {
+  .banner__three .banner_pagination .swiper-pagination-bullet-active {
     margin-bottom: 0;
   }
-  .banner__three .swiper-pagination .swiper-pagination-bullet:last-child {
+  .banner__three .banner_pagination .swiper-pagination-bullet:last-child {
     margin-bottom: 9px;
   }
-  .banner__three .swiper-pagination:last-child .swiper-pagination-bullet-active {
+  .banner__three .banner_pagination:last-child .swiper-pagination-bullet-active {
     margin-bottom: 0;
   }
 }
@@ -5139,7 +5144,7 @@ Banner Four CSS
   .banner__two-arrow-next {
     right: 65px;
   }
-  .banner__three .swiper-pagination {
+  .banner__three .banner_pagination {
     left: -50px;
   }
 }
@@ -6452,13 +6457,14 @@ Services Three CSS
 .services__three .slider {
   position: relative;
 }
-.services__three-arrow-next {
+.services__three-arrow-prev, .services__three-arrow-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
   right: -78px;
-  width: 50px;
-  height: 50px;
 }
-.services__three-arrow-next i {
+.services__three-arrow-prev i, .services__three-arrow-next i {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -6469,34 +6475,16 @@ Services Three CSS
   color: var(--text-white);
   border-radius: 6px;
   transition: 0.4s;
+  cursor: pointer;
 }
-.services__three-arrow-next i:hover {
+.services__three-arrow-prev i:hover, .services__three-arrow-next i:hover {
   background: var(--bg-white);
   color: var(--text-heading-color);
   border-color: var(--primary-color-2);
 }
 .services__three-arrow-prev {
-  display: inline-block;
+  right: inherit;
   left: -100px;
-  width: 50px;
-  height: 50px;
-}
-.services__three-arrow-prev i {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  display: inline-block;
-  text-align: center;
-  background: var(--primary-color-3);
-  font-size: 22px;
-  color: var(--text-white);
-  border-radius: 6px;
-  transition: 0.4s;
-}
-.services__three-arrow-prev i:hover {
-  background: var(--bg-white);
-  color: var(--text-heading-color);
-  border-color: var(--primary-color-2);
 }
 .services__three-arrow.page .services__three-arrow-next i,
 .services__three-arrow.page .services__three-arrow-prev i {
@@ -6876,7 +6864,7 @@ Get In Touch Three CSS
   align-items: center;
   gap: 45px;
 }
-.getIn__touch-three-left-video-icon.video a {
+.getIn__touch-three-left-video-icon.video span {
   color: var(--primary-color-3);
 }
 .getIn__touch-three-left-video-text h4 {
@@ -8550,6 +8538,26 @@ Portfolio Two CSS
   transition: 0.3s;
 }
 
+.portfolio__three {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.portfolio__three .portfolio-border {
+  position: relative;
+  z-index: 1;
+  border-right: 4px solid var(--border-white);
+  padding: 0;
+}
+.portfolio__three .portfolio-border .project__area-item {
+  min-height: 600px;
+}
+.portfolio__three .portfolio-border:last-child {
+  border: 0;
+}
+
 /*==========================================================================
 Filter CSS
 ==========================================================================*/
@@ -8767,6 +8775,20 @@ Project Details CSS
   .portfolio-item-inner {
     left: 30px;
     bottom: 30px;
+  }
+  .portfolio__three {
+    border-left: 2px solid var(--border-white);
+    border-right: 2px solid var(--border-white);
+  }
+  .portfolio__three .portfolio-border {
+    border-right: 0;
+    border: 2px solid var(--border-white);
+  }
+  .portfolio__three .portfolio-border .project__area-item {
+    min-height: 400px;
+  }
+  .portfolio__three .portfolio-border:last-child {
+    border: 2px solid var(--border-white);
   }
 }
 @media (max-width: 991px) {

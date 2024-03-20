@@ -371,11 +371,13 @@ Services Three CSS
         position: relative;
     }
 	&-arrow {
-		&-next {			
+		&-prev,
+		&-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             display: inline-block;
             right: -78px;
-            width: 50px;
-            height: 50px;
 			i {
                 width: 50px;
                 height: 50px;
@@ -386,7 +388,8 @@ Services Three CSS
                 font-size: 22px;
                 color: var(--text-white);
                 border-radius: 6px;
-                transition: 0.4s;	
+                transition: 0.4s;
+                cursor: pointer;
                 &:hover {
                     background: var(--bg-white);
                     color: var(--text-heading-color);
@@ -394,28 +397,9 @@ Services Three CSS
                 }  
 			}
 		}
-		&-prev {		
-			display: inline-block;
+		&-prev {
+            right: inherit;
             left: -100px;
-            width: 50px;
-            height: 50px;
-			i {
-                width: 50px;
-                height: 50px;
-                line-height: 50px;
-                display: inline-block;
-                text-align: center;
-                background: var(--primary-color-3);
-                font-size: 22px;
-                color: var(--text-white);
-                border-radius: 6px;
-                transition: 0.4s;	
-                &:hover {
-                    background: var(--bg-white);
-                    color: var(--text-heading-color);
-                    border-color: var(--primary-color-2);
-                }  
-			} 
 		}
         &.page {
             .services__three-arrow-next i,

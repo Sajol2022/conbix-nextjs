@@ -11,7 +11,7 @@ const PricingPages = () => {
             <SEO pageTitle='Pricing Plan' />
             <HeaderOne />
             <BreadCrumb title='Pricing Plan' innerTitle='Pricing Plan' />
-            <div className='pricing__area page'>
+            <div className='pricing__area page section-padding'>
                 <PricingPlansMain />
             </div>
             <div className='all-footer'>

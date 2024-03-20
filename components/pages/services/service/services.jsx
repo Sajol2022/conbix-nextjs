@@ -5,13 +5,12 @@ import Testimonial from '../../homes/home/testimonial';
 import servicesData from '@/components/data/services-data';
 
 const ServicesMain = () => {
-    const servicesItem = servicesData;
     return (
         <>
         <div className="services__page section-padding-two">
             <div className="container">
                 <div className="row">
-                    {servicesItem?.map((data, id) => (
+                    {servicesData?.map((data, id) => (
                         <div className="col-xl-4 col-lg-4 col-md-6 mt-25" key={id}>
                             <div className="services__three-item page">
                                 <img src={data.image.src} alt="image" />

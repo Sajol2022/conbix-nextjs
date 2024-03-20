@@ -10,7 +10,11 @@ const slideControl = {
     loop: true,
     slidesPerView: 1,
     effect: "fade",
- 
+    autoplay: {
+        delay: 6000,
+        reverseDirection: false,
+        disableOnInteraction: false,
+    }, 
     pagination: {
         el: ".banner_pagination",
         clickable: true,

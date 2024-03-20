@@ -275,6 +275,25 @@ Portfolio Two CSS
 		}
 	}
 }
+.portfolio__three {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	.portfolio-border {
+		position: relative;
+		z-index: 1;
+		border-right: 4px solid var(--border-white);
+		padding: 0;
+		.project__area-item {
+			min-height: 600px;
+		}
+		&:last-child {
+			border: 0;
+		}
+	}
+}
 /*==========================================================================
 Filter CSS
 ==========================================================================*/
@@ -506,7 +525,7 @@ Project Details CSS
 				}
 			}
 		}
-	}	
+	}
 }
 @media (max-width: 1199px) {
 	.portfolio {
@@ -516,6 +535,20 @@ Project Details CSS
 			&-inner {
 				left: 30px;
 				bottom: 30px;
+			}
+		}
+	}
+	.portfolio__three {
+		border-left: 2px solid var(--border-white);
+		border-right: 2px solid var(--border-white);
+		.portfolio-border {
+			border-right: 0;
+			border: 2px solid var(--border-white);
+			.project__area-item {
+				min-height: 400px;
+			}
+			&:last-child {
+				border: 2px solid var(--border-white);
 			}
 		}
 	}

@@ -287,7 +287,7 @@ Get In Touch Three CSS
             display: flex;
             align-items: center;
             gap: 45px;
-            &-icon.video a {
+            &-icon.video span {
                 color: var(--primary-color-3);
             }
             &-text h4 {
