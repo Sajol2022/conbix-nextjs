@@ -1,19 +1,20 @@
 "use client"
 import { useParams, useRouter } from "next/navigation";
-import portfolioData from '@/components/data/portfolio-data';
-import PortfolioDetails from "@/components/pages/portfolio/portfolio-details";
+import ServicesSingle from '@/components/pages/services/service-single';
+import portfolioData from "@/components/data/portfolio-data";
 
 const PortfolioDetail = () => {
     const params = useParams();
-    const singleData = portfolioData?.find((portfolio) => portfolio.id === params.id);
+    const serviceDetails = portfolioData?.find((service) => service.id === params.id);
     const router = useRouter();
-    if (!singleData) {
+    if (!serviceDetails) {
         return router.push("/404-error");
     }
     return (
         <>
-            {/* <PortfolioDetails singleData={singleData} /> */}
-            <h1>{singleData.title}</h1>
+            {/* <ServicesSingle serviceDetails={serviceDetails} />
+             */}
+             <h1>{serviceDetails?.title}</h1>
         </>
     );
 };
