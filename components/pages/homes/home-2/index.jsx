@@ -25,7 +25,7 @@ const HomeTwo = ({addClass}) => {
             <Video />
             <Work />
             <Consulting />
-            {/* <Portfolio /> */}
+            <Portfolio />
             <Team />
             <Blog />
             <FooterTwo />
