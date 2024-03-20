@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from 'react';
-import "./styles.css";
+import "./globals.css";
 import SwitchTab from '@/components/pages/common/dark-light';
 
 export default function RootLayout({ children }) {
