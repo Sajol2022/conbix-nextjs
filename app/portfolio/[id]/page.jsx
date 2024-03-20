@@ -12,7 +12,8 @@ const PortfolioDetail = () => {
     }
     return (
         <>
-            <PortfolioDetails singleData={singleData} />
+            {/* <PortfolioDetails singleData={singleData} /> */}
+            <h1>{singleData.title}</h1>
         </>
     );
 };
