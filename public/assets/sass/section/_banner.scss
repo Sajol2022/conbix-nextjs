@@ -29,7 +29,7 @@ Banner One CSS
         padding-bottom: 185px;
         padding-top: 180px;
         max-width: 740px;
-        span {
+        > span {
             font-family: var(--heading-font);
             display: block;
             color: var(--primary-color-1);
@@ -183,7 +183,7 @@ Banner Two CSS
             -webkit-text-stroke-width: 1px;
             z-index: -1;     
         }
-        span {
+        > span {
             color: var(--primary-color-2);
             font-weight: 700;
             font-size: 20px;
@@ -251,7 +251,7 @@ Banner Three CSS
     overflow: hidden;
     &-title {
         position: relative;
-        span {
+        > span {
             color: var(--primary-color-3);
             font-weight: 700;
             font-size: 20px;
@@ -357,10 +357,10 @@ Banner Three CSS
 }
 .banner__two,
 .banner__one {
-    .banner__two-content span,
+    .banner__two-content > span,
     .banner__two-content h1,
     .banner__two-content-button,
-    .banner__one-content span,
+    .banner__one-content > span,
     .banner__one-content h1,
     .banner__one-content-button {
         animation-name: fadeInUp;
@@ -375,8 +375,8 @@ Banner Three CSS
         animation-fill-mode: both
     }
     .swiper-slide-active {
-        .banner__two-content span,
-        .banner__one-content span {
+        .banner__two-content > span,
+        .banner__one-content > span {
             animation-delay: .5s;
             animation-duration: 1.2s;
         }

@@ -4594,7 +4594,7 @@ Banner One CSS
   padding-top: 180px;
   max-width: 740px;
 }
-.banner__one-content span {
+.banner__one-content > span {
   font-family: var(--heading-font);
   display: block;
   color: var(--primary-color-1);
@@ -4743,7 +4743,7 @@ Banner Two CSS
   -webkit-text-stroke-width: 1px;
   z-index: -1;
 }
-.banner__two-content span {
+.banner__two-content > span {
   color: var(--primary-color-2);
   font-weight: 700;
   font-size: 20px;
@@ -4811,7 +4811,7 @@ Banner Three CSS
 .banner__three-title {
   position: relative;
 }
-.banner__three-title span {
+.banner__three-title > span {
   color: var(--primary-color-3);
   font-weight: 700;
   font-size: 20px;
@@ -4912,16 +4912,16 @@ Banner Three CSS
   margin-right: -750px;
 }
 
-.banner__two .banner__two-content span,
+.banner__two .banner__two-content > span,
 .banner__two .banner__two-content h1,
 .banner__two .banner__two-content-button,
-.banner__two .banner__one-content span,
+.banner__two .banner__one-content > span,
 .banner__two .banner__one-content h1,
 .banner__two .banner__one-content-button,
-.banner__one .banner__two-content span,
+.banner__one .banner__two-content > span,
 .banner__one .banner__two-content h1,
 .banner__one .banner__two-content-button,
-.banner__one .banner__one-content span,
+.banner__one .banner__one-content > span,
 .banner__one .banner__one-content h1,
 .banner__one .banner__one-content-button {
   animation-name: fadeInUp;
@@ -4937,10 +4937,10 @@ Banner Three CSS
   animation-name: fadeInRightBig;
   animation-fill-mode: both;
 }
-.banner__two .swiper-slide-active .banner__two-content span,
-.banner__two .swiper-slide-active .banner__one-content span,
-.banner__one .swiper-slide-active .banner__two-content span,
-.banner__one .swiper-slide-active .banner__one-content span {
+.banner__two .swiper-slide-active .banner__two-content > span,
+.banner__two .swiper-slide-active .banner__one-content > span,
+.banner__one .swiper-slide-active .banner__two-content > span,
+.banner__one .swiper-slide-active .banner__one-content > span {
   animation-delay: 0.5s;
   animation-duration: 1.2s;
 }
