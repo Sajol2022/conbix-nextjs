@@ -22,7 +22,7 @@ const HomeOne = () => {
             <Services />
             <CtaArea />
             <Experience />
-            {/* <Portfolio /> */}
+            <Portfolio />
             <Testimonial />
             <GetInTouch />
             <Blog />
