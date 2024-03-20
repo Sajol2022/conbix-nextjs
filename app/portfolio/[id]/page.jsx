@@ -1,9 +1,9 @@
 "use client"
 import { useParams, useRouter } from "next/navigation";
 import portfolioData from '@/components/data/portfolio-data';
-import React from 'react';
+import PortfolioDetails from "@/components/pages/portfolio/portfolio-details";
 
-const PortfolioPage = () => {
+const PortfolioDetail = () => {
     const params = useParams();
     const singleData = portfolioData?.find((portfolio) => portfolio.id === params.id);
     const router = useRouter();
@@ -12,9 +12,9 @@ const PortfolioPage = () => {
     }
     return (
         <>
-            <h1>{singleData.title}</h1>
+            <PortfolioDetails singleData={singleData} />
         </>
     );
 };
 
-export default PortfolioPage;
+export default PortfolioDetail;
