@@ -6,49 +6,43 @@ import image5 from "../../public/assets/img/portfolio/portfolio-5.jpg";
 import image6 from "../../public/assets/img/portfolio/portfolio-6.jpg";
 
 const portfolioData = [
-    {
-        id: '01',
-        url: 'revenue-growth',
+    {        
+        id: 'revenue-growth',
         title: 'Revenue Growth',
         subtitle: 'Design',
         image: image1,
         category: "marketing",
     },
-    {
-        id: '02',
-        url: 'digital-consulting',
+    {        
+        id: 'digital-consulting',
         title: 'Digital Consulting',
         subtitle: 'Consulting',
         image: image2,
         category: "corporate",
     },
-    {
-        id: '03',
-        url: 'business-strategy',
+    {        
+        id: 'business-strategy',
         title: 'Business Strategy',
         subtitle: 'Finance',
         image: image3,
         category: "business",
     },
-    {
-        id: '04',
-        url: 'audit-marketing',
+    {        
+        id: 'audit-marketing',
         title: 'Audit Marketing',
         subtitle: 'Marketing',
         image: image4,
         category: "marketing",
     },
-    {
-        id: '05',
-        url: 'business-analytics',
+    {        
+        id: 'business-analytics',
         title: 'Business Analytics',
         subtitle: 'Corporate',
         image: image5,
         category: "corporate",
     },
-    {
-        id: '06',
-        url: 'digital-business',
+    {        
+        id: 'digital-business',
         title: 'Digital Business',
         subtitle: 'Finance',
         image: image6,
