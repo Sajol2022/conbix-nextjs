@@ -12,7 +12,7 @@ const PortfolioPage = () => {
     }
     return (
         <>
-            
+            <h1>{singleData.title}</h1>
         </>
     );
 };
