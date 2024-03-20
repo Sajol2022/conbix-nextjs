@@ -1,24 +1,22 @@
 "use client"
-import React from 'react';
-import HeaderOne from '../../../layout/headers/header-one';
-import FooterOne from '../../../layout/footers/footer-one';
-import BreadCrumb from '../../common/breadcrumb';
-import TwoColumns from './two-columns';
-import SEO from '../../../seo';
-import DarkRtl from '../../common/dark-light';
+import SEO from "@/components/data/seo";
+import HeaderOne from "@/components/layout/headers/header-one";
+import BreadCrumb from "../../common/breadcrumb";
+import FooterTwo from "@/components/layout/footers/footer-two";
+import TwoColumns from "./two-columns";
 
-const PortfolioTwoColumns = () => {
-    const switchClass = { class: "switch__tab-area-icon" };
+const PortfolioTowColumns = () => {
     return (
         <>
-            <SEO pageTitle='2 Columns' />
-            <DarkRtl switchClass={switchClass} />
+            <SEO pageTitle='Portfolio Grid - 02 Columns' />
             <HeaderOne />
-            <BreadCrumb title="2 Columns" innerTitle="Portfolio Grid" />
-            <TwoColumns />
-            <FooterOne />            
+            <BreadCrumb title="02 Columns" innerTitle="Portfolio Grid" />
+            <TwoColumns />        
+            <div className='all-footer'>
+                <FooterTwo />
+            </div>          
         </>
     );
 };
 
-export default PortfolioTwoColumns;
+export default PortfolioTowColumns;

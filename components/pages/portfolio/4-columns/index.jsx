@@ -1,22 +1,20 @@
 "use client"
-import React from 'react';
-import HeaderOne from '../../../layout/headers/header-one';
-import FooterOne from '../../../layout/footers/footer-one';
-import BreadCrumb from '../../common/breadcrumb';
-import FourColumns from './four-columns';
-import SEO from '../../../seo';
-import DarkRtl from '../../common/dark-light';
+import SEO from "@/components/data/seo";
+import HeaderOne from "@/components/layout/headers/header-one";
+import BreadCrumb from "../../common/breadcrumb";
+import FooterTwo from "@/components/layout/footers/footer-two";
+import FourColumns from "./four-columns";
 
 const PortfolioFourColumns = () => {
-    const switchClass = { class: "switch__tab-area-icon" };
     return (
         <>
-            <SEO pageTitle='4 Columns' />
-            <DarkRtl switchClass={switchClass} />
+            <SEO pageTitle='Portfolio Grid - 04 Columns' />
             <HeaderOne />
-            <BreadCrumb title="4 Columns" innerTitle="Portfolio Grid" />
-            <FourColumns />
-            <FooterOne />            
+            <BreadCrumb title="04 Columns" innerTitle="Portfolio Grid" />
+            <FourColumns />        
+            <div className='all-footer'>
+                <FooterTwo />
+            </div>          
         </>
     );
 };

@@ -136,11 +136,17 @@ a:hover {
 	color: inherit;
 }
 .section-padding {
-	padding: 120px 0px;
+	padding: 120px 0;
+}
+.section-padding-two {
+	padding: 95px 0 120px 0;
 }
 @media (max-width: 575px) {
 	.section-padding {
-		padding: 85px 0px;
+		padding: 90px 0;
+	}
+	.section-padding-two {
+		padding: 65px 0 90px 0;
 	}
 }
 .display-none {

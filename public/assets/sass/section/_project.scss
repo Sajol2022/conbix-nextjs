@@ -8,6 +8,8 @@ Project CSS
 		z-index: 1;
 		img {
 			width: 100%;
+			min-height: 430px;
+			object-fit: cover;
 		}
 		&::before {
 			position: absolute;
@@ -28,7 +30,7 @@ Project CSS
 			left: 30px;
 			right: 30px;
 			bottom: 30px;
-			background: var(--primary-color-1);
+			background: var(--primary-color-3);
 			z-index: 1;
 			transition: 0.4s;
 			opacity: 0;
@@ -47,9 +49,6 @@ Project CSS
 			opacity: 0;
 			h4 {
 				color: var(--text-white);
-				margin-bottom: 13px;
-				padding-bottom: 13px;
-				border-bottom: 1px solid var(--border-white);
 			}
 			span {
 				color: var(--color-9);
@@ -94,6 +93,11 @@ Project CSS
 					opacity: 1;
 				}
 			}
+		}
+	}
+	&-page {
+		.project__area-item::after {
+			background: var(--primary-color-1);
 		}
 	}
 }
@@ -272,104 +276,6 @@ Portfolio Two CSS
 	}
 }
 /*==========================================================================
-Portfolio Three CSS
-==========================================================================*/
-.portfolio__three {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-	&-item {
-		position: relative;
-		z-index: 1;
-		padding: 40px;
-		&::before {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background: var(--primary-color-3);
-			opacity: 0;
-			transition: 0.4s;
-			border-radius: 6px;	
-			z-index: -1;		
-		}
-		&-icon {
-			margin-bottom: 350px;
-			text-align: right;
-			opacity: 0;
-			transition: 0.4s;
-			i {
-				color: var(--text-heading-color);
-				background: var(--bg-white);
-				width: 50px;
-				height: 50px;
-				line-height: 50px;
-				text-align: center;
-				border-radius: 6px;
-			}
-		}
-		h4 {
-			color: var(--text-white);
-			opacity: 0;
-			transition: 0.4s;
-		}
-		span {
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 24px;
-			font-family: var(--heading-font);
-			color: var(--text-white);
-			transition: 0.4s;
-			opacity: 0;
-		}
-		&:hover {
-			&::before {
-				opacity: 0.7;
-			}
-			h4 {
-				opacity: 1;
-			}
-			span {
-				opacity: 1;
-			}
-			.portfolio__three-item-icon {
-				opacity: 1;
-			}
-		}
-	}
-	.portfolio-border {
-		position: relative;
-		z-index: 1;
-		padding: 30px;
-		border-right: 4px solid var(--border-white);
-		&::after {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: var(--bg-heading-color);
-			transition: 0.4s;
-			opacity: 0;
-			border-radius: 6px;	
-			z-index: -2;		
-		}
-		&:hover {
-			&::after {
-				opacity: 0.8;
-			}
-		}
-		&:last-child {
-			border: 0;
-		}
-	}
-}
-/*==========================================================================
 Filter CSS
 ==========================================================================*/
 .filter_button {
@@ -440,6 +346,7 @@ Project Filter CSS
 				width: 100px;
 				border-radius: 50%;
 				background: var(--primary-color-1);
+				z-index: -1;
 			}			
 			&::after {
 				content: '';
@@ -544,15 +451,7 @@ Project Details CSS
 		}
 	}   
 }
-@media (max-width: 1399px) {    
-	.portfolio__three {
-		&-item {
-			padding: 30px;
-			&-icon {
-				margin-bottom: 190px;
-			}
-		}
-	}  
+@media (max-width: 1399px) {
 	.project__area {
 		&-item {
 			&-content {
@@ -617,17 +516,6 @@ Project Details CSS
 			&-inner {
 				left: 30px;
 				bottom: 30px;
-			}
-		}
-	}
-	.portfolio__three {
-		border-left: 2px solid var(--border-white);
-		border-right: 2px solid var(--border-white);
-		.portfolio-border {
-			border-right: 0;
-			border: 2px solid var(--border-white);
-			&:last-child {
-				border: 2px solid var(--border-white);
 			}
 		}
 	}

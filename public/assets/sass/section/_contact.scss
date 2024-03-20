@@ -1,7 +1,7 @@
 /*==========================================================================
-Conbix Contact CSS
+Contact CSS
 ==========================================================================*/
-.conbix-contact-item {
+.contact-item {
     position: relative;
     span {
         position: absolute;
@@ -9,10 +9,6 @@ Conbix Contact CSS
         top: 23px;
         color: var(--primary-color-1);
         font-weight: 400;
-    }
-    input,
-    textarea {
-        font-size: 15px;
     }
 }
 /*==========================================================================

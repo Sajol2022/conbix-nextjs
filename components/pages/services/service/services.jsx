@@ -1,41 +1,36 @@
-import React from 'react';
-import Video from './video';
-import servicesData from '../../../data/services-data';
 import Link from 'next/link';
-import Testimonial from '../../homes/home-2/testimonial';
-import Image from 'next/image';
-
-const servicesItem = servicesData.filter(service => service.inner !== service.home_page);
+import CtaArea from '../../homes/home/cta';
+import Solution from './solution';
+import Testimonial from '../../homes/home/testimonial';
+import servicesData from '@/components/data/services-data';
 
 const ServicesMain = () => {
-    const testimonialClass = {subtitle: 'subtitle-four',class: "testimonial__one page section-padding"}
+    const servicesItem = servicesData;
     return (
         <>
-            <div className="services__page section-padding-two">
-                <div className="container">
-                    <div className="row">
-                        {servicesItem?.map((data, id) => (
-                            <div className="col-lg-4 col-md-6 md-mb-30" key={id}>
-                                <div className="services__one-item">
-                                    <div className="services__one-item-image">
-                                        <Image src={data.singleImage} alt="liability-insurance" width={600} height={600} />
+        <div className="services__page section-padding-two">
+            <div className="container">
+                <div className="row">
+                    {servicesItem?.map((data, id) => (
+                        <div className="col-xl-4 col-lg-4 col-md-6 mt-25" key={id}>
+                            <div className="services__three-item page">
+                                <img src={data.image.src} alt="image" />
+                                <div className="services__three-item-content page">
+                                    <div className="services__three-item-content-icon">
+                                        {data.icon}
                                     </div>
-                                    <div className="services__one-item-content">
-                                        <div className="services__one-item-content-icon">
-                                            {data.icon}
-                                        </div>
-                                        <h4><Link href={`/services/${data.id}`}>{data.title}</Link></h4>
-                                        <p>{data.description}</p>
-                                        <Link href={`/services/${data.id}`}>Read More<i className="fas fa-long-arrow-right"></i></Link>
-                                    </div>
+                                    <h4><Link href={`/services/${data.id}`}>{data.title}</Link></h4>
+                                    <p>{data.description}</p>
                                 </div>
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
-            <Video />
-            <Testimonial testimonialClass={testimonialClass} />
+        </div>
+            <CtaArea />    
+            <Solution />
+            <Testimonial />
         </>
     );
 };

@@ -6,28 +6,26 @@ import Image from 'next/image';
 const showPortfolioItem = 4;
 
 const TwoColumns = () => {
-    const portfolioItem = portfolioData.filter(portfolio => portfolio.inner == portfolio.home_1);
+    const portfolioItem = portfolioData;
     const [items, setItems] = useState(portfolioItem);
     const [next, setNext] = useState(showPortfolioItem);
     const handleLoadData = () => {
         setNext(value => value + 2)
     }
     return (
-        <div className="portfolio__one section-padding-two">
+        <div className="project__one section-padding-two">
             <div className="container">
                 <div className="row">
                     {portfolioItem?.slice(0, next)?.map((data, id) => (
-                        <div className="col-lg-6 mt-30" key={id}>
-                            <div className="portfolio__one-item page">
-                                <Image src={data.image1} alt="image" />
-                                <div className="portfolio__one-item-content">
-                                    <div className="portfolio__one-item-content-left">
-                                        <Link href={`/portfolio/${data.id}`}><i className="flaticon-arrows"></i></Link>
-                                    </div>
-                                    <div className="portfolio__one-item-content-right">
-                                        <span>{data.subtitle} Coverage</span>
-                                        <h4><Link href={`/portfolio/${data.id}`}>{data.title}</Link></h4>
-                                    </div>
+                        <div className="col-lg-6 mt-25" key={id}>
+                            <div className="project__one-item">
+                                <img src={data.image.src} alt="image" />
+                                <div className="project__one-item-content">
+                                    <span>{data.subtitle}</span>
+                                    <h4><Link href={`/portfolio/${data.id}`}>{data.title}</Link></h4>
+                                </div>
+                                <div className="project__one-item-icon">
+                                    <Link href={`/portfolio/${data.id}`}><i className="fal fa-long-arrow-up"></i></Link>
                                 </div>
                             </div>
                         </div>

@@ -1,24 +1,22 @@
 "use client"
-import React from 'react';
-import HeaderOne from '../../../layout/headers/header-one';
-import FooterOne from '../../../layout/footers/footer-one';
-import ServicesMain from './service-two';
-import BreadCrumb from '../../common/breadcrumb';
-import SEO from '../../../seo';
-import DarkRtl from '../../common/dark-light';
+import SEO from "@/components/data/seo";
+import HeaderOne from "@/components/layout/headers/header-one";
+import BreadCrumb from "../../common/breadcrumb";
+import FooterTwo from "@/components/layout/footers/footer-two";
+import ServicesMain from "./service-two";
 
-const ServiceTwoPage = () => {
-    const switchClass = { class: "switch__tab-area-icon" };
+const ServicePageTwo = () => {
     return (
         <>
-        <SEO pageTitle='Services Two' />
-        <DarkRtl switchClass={switchClass} />
-        <HeaderOne />
-        <BreadCrumb title='Services Two' innerTitle='Services Two' />
-        <ServicesMain />
-        <FooterOne />
+            <SEO pageTitle="Services Two" />
+            <HeaderOne />
+            <BreadCrumb title="Services Two" innerTitle="Services Two" />
+            <ServicesMain />
+            <div className='all-footer'>
+                <FooterTwo />
+            </div>
         </>
     );
 };
 
-export default ServiceTwoPage;
+export default ServicePageTwo;

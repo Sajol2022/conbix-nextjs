@@ -292,6 +292,8 @@ Services Three CSS
         > img {
             width: 100%;
             filter: grayscale(100%);
+            min-height: 450px;
+            object-fit: cover;
         }
         &.page {
             box-shadow: var(--box-shadow-1);
@@ -326,6 +328,11 @@ Services Three CSS
                 top: -30px;
                 right: 0;
                 padding: 10px 0;
+                i {
+                    color: var(--text-white);
+                    font-size: 50px;
+                    display: inline-block;
+                }
             }
             h4 {
                 margin-bottom: 5px;

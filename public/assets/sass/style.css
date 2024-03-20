@@ -141,12 +141,19 @@ a:hover {
 }
 
 .section-padding {
-  padding: 120px 0px;
+  padding: 120px 0;
+}
+
+.section-padding-two {
+  padding: 95px 0 120px 0;
 }
 
 @media (max-width: 575px) {
   .section-padding {
-    padding: 85px 0px;
+    padding: 90px 0;
+  }
+  .section-padding-two {
+    padding: 65px 0 90px 0;
   }
 }
 .display-none {
@@ -6371,6 +6378,9 @@ Services Three CSS
 .services__three-item > img {
   width: 100%;
   filter: grayscale(100%);
+  min-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .services__three-item.page {
   box-shadow: var(--box-shadow-1);
@@ -6406,6 +6416,11 @@ Services Three CSS
   top: -30px;
   right: 0;
   padding: 10px 0;
+}
+.services__three-item-content-icon i {
+  color: var(--text-white);
+  font-size: 50px;
+  display: inline-block;
 }
 .services__three-item-content h4 {
   margin-bottom: 5px;
@@ -7199,128 +7214,20 @@ Pricing CSS
   color: var(--text-white);
   border-color: var(--primary-color-3);
 }
-.pricing__area-item.page .pricing__area-item-price {
+.pricing__area.page .pricing__area-item-price {
   background: var(--primary-color-1);
 }
-.pricing__area-item.page .pricing__area-item-list ul li i {
+.pricing__area.page .pricing__area-item-list ul li i {
   color: var(--primary-color-1);
   border-color: var(--primary-color-1);
 }
-.pricing__area-item.page.pricing__area-item .btn-eight::before {
+.pricing__area.page .pricing__area-item .btn-eight::before {
   background: var(--primary-color-1);
 }
-.pricing__area-item.page.pricing__area-item .btn-eight:hover {
+.pricing__area.page .pricing__area-item .btn-eight:hover {
   border-color: var(--primary-color-1);
 }
 
-/*==========================================================================
-Pricing Two CSS
-==========================================================================*/
-.pricing__two {
-  background: var(--color-6);
-}
-.pricing__two-title h2 {
-  margin-bottom: 30px;
-}
-.pricing__two-title p {
-  margin-bottom: 40px;
-}
-.pricing__two-item {
-  background: var(--bg-white);
-  padding: 40px;
-}
-.pricing__two-item-price {
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid var(--border-color-1);
-}
-.pricing__two-item-price > span {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  font-family: var(--heading-font);
-  margin-bottom: 5px;
-  display: inline-block;
-}
-.pricing__two-item-price h2 span {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  margin-left: 10px;
-  display: inline-block;
-}
-.pricing__two-item-list ul {
-  padding: 0;
-  margin: 0;
-}
-.pricing__two-item-list ul li {
-  list-style: none;
-  color: var(--text-heading-color);
-  margin-bottom: 20px;
-}
-.pricing__two-item-list ul li i {
-  color: var(--primary-color-1);
-  font-size: 20px;
-  margin-right: 10px;
-}
-.pricing__two-item-list ul li:last-child {
-  margin: 0;
-}
-.pricing__two-item-btn {
-  margin-top: 30px;
-}
-.pricing__two-item-btn .btn-three {
-  border-color: var(--border-color-1);
-  color: var(--text-heading-color);
-}
-.pricing__two-item-btn .btn-three:hover {
-  color: var(--text-white);
-  border-color: var(--primary-color-1);
-}
-.pricing__two-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 70px;
-}
-.pricing__two-button .nav-item button {
-  background: transparent;
-  border: 1px solid var(--border-color-1);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 50px;
-  text-transform: capitalize;
-  font-family: var(--heading-font);
-  padding: 0 30px;
-  margin: 0 10px;
-  color: var(--text-heading-color);
-}
-.pricing__two-button .nav-item .active {
-  background: var(--primary-color-1);
-  border-color: var(--primary-color-1);
-  color: var(--text-white);
-}
-
-@media (max-width: 1399px) {
-  .pricing__two-item {
-    padding: 30px 25px;
-  }
-  .pricing__two-item.center .pricing__two-item-btn .theme-btn {
-    padding: 12px 34px;
-  }
-  .pricing__two-item-btn .btn-three {
-    padding: 11px 34px;
-  }
-}
-@media (max-width: 1199px) {
-  .pricing__two-title {
-    text-align: center;
-  }
-  .pricing__two-button {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-}
 @media (max-width: 991px) {
   .pricing__area-item {
     padding: 0 50px 50px 40px;
@@ -7561,7 +7468,7 @@ Team Three CSS
   height: 60%;
   bottom: 0;
   left: 0;
-  background: linear-gradient(180deg, rgba(5, 6, 8, 0) 0%, var(--heading-color) 100%);
+  background: linear-gradient(180deg, rgba(5, 6, 8, 0) 0%, var(--text-heading-color) 100%);
   transition: 0.5s;
   border-radius: 6px;
 }
@@ -7699,143 +7606,178 @@ Team Three CSS
 /*==========================================================================
 Team Details CSS
 ==========================================================================*/
-.team__details-content > span {
-  font-weight: 600;
-  color: var(--color-2);
+.team__single-left {
+  position: sticky;
+  top: 130px;
+  margin-right: 30px;
+}
+.team__single-left-thumb {
+  position: relative;
+}
+.team__single-left-thumb-social {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.team__single-left-thumb-social ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.team__single-left-thumb-social ul li {
+  list-style: none;
+  display: inline-block;
+}
+.team__single-left-thumb-social ul li a {
+  display: inline-flex;
+  transition: all ease 0.4s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.team__single-left-thumb-social ul li a i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--bg-white);
+  transition: 0.4s;
+  color: var(--primary-color-1);
+}
+.team__single-left-thumb-social ul li a:hover i {
+  background: var(--primary-color-1);
+  color: var(--text-white);
+}
+.team__single-left-thumb-social ul li:nth-child(1) a {
+  transition-delay: 0.1s;
+}
+.team__single-left-thumb-social ul li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+.team__single-left-thumb-social ul li:nth-child(3) a {
+  transition-delay: 0.3s;
+}
+.team__single-left-thumb-social ul li:nth-child(4) a {
+  transition-delay: 0.4s;
+}
+.team__single-left-info {
+  padding: 40px;
+  background: var(--color-6);
+  border: 1px solid var(--border-color-4);
+  margin-bottom: 30px;
+}
+.team__single-left-info > span {
+  font-weight: 500;
+  color: var(--primary-color-1);
   margin-top: -7px;
   display: block;
 }
-.team__details-content h2 {
-  margin-bottom: 20px;
+.team__single-left-info h3 {
+  margin-bottom: 35px;
 }
-.team__details-content p {
+.team__single-left-info p {
   margin-bottom: 25px;
 }
-.team__details-content-contact-item {
+.team__single-left-info-contact-item {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-bottom: 25px;
+  background: var(--bg-white);
+  border-radius: 10px;
 }
-.team__details-content-contact-item i {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 15px;
-  border: 1px solid var(--border-color-1);
-  box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05);
+.team__single-left-info-contact-item:last-child {
+  margin: 0;
+}
+.team__single-left-info-contact-item i {
+  width: 70px;
+  height: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
   font-weight: 400;
-  font-size: 20px;
-  color: var(--primary-color-1);
-  text-align: center;
+  font-size: 28px;
+  color: var(--text-white);
+  background: var(--primary-color-1);
 }
-.team__details-content-contact-item-info span {
+.team__single-left-info-contact-item-info span {
   font-size: 15px;
   font-weight: 500;
-  color: var(--color-2);
 }
-.team__details-content-contact-item-info h5 {
+.team__single-left-info-contact-item-info h5 {
   text-transform: lowercase;
 }
-.team__details-content-contact-item-info h5 a {
+.team__single-left-info-contact-item-info h5 a {
   transition: 0.4s;
 }
-.team__details-content-contact-item-info h5 a:hover {
+.team__single-left-info-contact-item-info h5 a:hover {
   color: var(--primary-color-1);
 }
-.team__details-experience h3 {
-  margin-bottom: 20px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--border-color-1);
+.team__single-left:hover .team__single-left-thumb-social ul li a {
+  transform: translateY(0);
+  opacity: 1;
 }
-.team__details-experience > p {
+.team__single-right-experience {
   margin-bottom: 40px;
 }
-.team__details-experience-area {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.team__single-right-experience h3 {
+  margin-bottom: 10px;
 }
-.team__details-experience-area-item {
-  padding: 35px 30px;
-  border: 1px solid var(--border-color-1);
-  overflow: hidden;
-  text-align: center;
+.team__single-right-experience p:last-child {
+  margin: 0;
+}
+.team__single-right-skill h3 {
+  margin-bottom: 10px;
+}
+.team__single-right-skill p {
+  margin-bottom: 30px;
+}
+.team__single-right-form {
+  margin-top: 50px;
+  padding: 50px 30px;
+  background: var(--color-6);
+  border: 1px solid var(--border-color-4);
+}
+.team__single-right-form-select {
   position: relative;
   z-index: 1;
 }
-.team__details-experience-area-item h6 {
+.team__single-right-form-select::before {
+  content: "\f88c";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
   position: absolute;
-  top: -15px;
-  left: -15px;
-  background: var(--primary-color-1);
-  color: var(--text-white);
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  border-radius: 50%;
-  font-weight: 600;
-  padding: 6px 0 0 12px;
-}
-.team__details-experience-area-item h6 span {
-  font-size: 16px;
-  text-transform: lowercase;
-  margin-left: 3px;
-  font-weight: 500;
-}
-.team__details-experience-area-item p {
-  font-size: 16px;
-  font-family: var(--heading-font);
-  font-weight: 600;
-}
-.team__details-experience-area-item p span {
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--primary-color-1);
 }
-.team__details-skills h3 {
-  margin-bottom: 20px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--border-color-1);
-}
-.team__details-skills > p {
-  margin-bottom: 40px;
-}
-.team__details-skills-item-content {
-  position: relative;
-}
-.team__details-skills-item-content h6 {
-  font-size: 18px;
-  line-height: 28px;
-}
-.team__details-skills-item-count {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-weight: 500;
-}
-.team__details-skills-item-bar {
-  height: 10px;
-  position: absolute;
-  width: 0;
-  top: 0;
-  left: 0;
-  background: var(--primary-color-1);
-  transition: all 3.5s ease-out 0s;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
-}
-.team__details-skills-item-inner {
+.team__single-right-form-select select {
   width: 100%;
-  height: 10px;
-  position: relative;
-  background: var(--border-color-2);
-  -webkit-clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
-  margin-top: 11px;
+  height: 60px;
+  background: var(--bg-white);
+  padding: 0 15px;
+  color: var(--body-color);
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
-.team__details .b-l {
-  border-left: none;
+.team__single-right-form-select select:focus {
+  outline: none;
 }
-.team__details .b-t {
-  border-top: none;
+.team__single-right-form .btn-one {
+  background: var(--bg-heading-color);
+}
+.team__single-right-form .btn-one::after, .team__single-right-form .btn-one::before {
+  background: var(--primary-color-1);
 }
 
 @media (max-width: 1399px) {
@@ -7846,33 +7788,33 @@ Team Details CSS
     margin-top: -45px;
   }
 }
-@media (max-width: 1199px) {
-  .team__details-content > span {
-    margin-top: 0;
+@media (max-width: 991px) {
+  .team__single-left {
+    margin: 0;
   }
-  .team__details-experience-area-item {
-    padding: 35px 18px;
-  }
-  .team__details-experience-area-item h6 {
-    top: -18px;
-    left: -18px;
-    padding: 7px 0 0 13px;
+  .team__single-left-info {
+    padding: 35px 25px;
   }
 }
-@media (max-width: 490px) {
-  .team__details-experience-area {
-    grid-template-columns: repeat(1, 1fr);
+@media (max-width: 575px) {
+  .team__single-form {
+    padding: 40px 20px;
   }
-  .team__details-experience-area-item h6 {
-    top: -15px;
-    left: -15px;
-    padding: 6px 0 0 12px;
+  .team__single-left-info-contact-item {
+    gap: 10px;
   }
-  .team__details .b-l {
-    border-left: 1px solid var(--border-color-1);
+  .team__single-left-info-contact-item i {
+    width: 60px;
+    height: 85px;
+    font-size: 22px;
   }
-  .team__details .b-b {
-    border-bottom: none;
+  .team__single-left-info-contact-item-info span {
+    font-size: 14px;
+  }
+  .team__single-left-info-contact-item-info h5 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
   }
 }
 /*==========================================================================
@@ -8353,6 +8295,9 @@ Project CSS
 }
 .project__area-item img {
   width: 100%;
+  min-height: 430px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .project__area-item::before {
   position: absolute;
@@ -8373,7 +8318,7 @@ Project CSS
   left: 30px;
   right: 30px;
   bottom: 30px;
-  background: var(--primary-color-1);
+  background: var(--primary-color-3);
   z-index: 1;
   transition: 0.4s;
   opacity: 0;
@@ -8393,9 +8338,6 @@ Project CSS
 }
 .project__area-item-content h4 {
   color: var(--text-white);
-  margin-bottom: 13px;
-  padding-bottom: 13px;
-  border-bottom: 1px solid var(--border-white);
 }
 .project__area-item-content span {
   color: var(--color-9);
@@ -8435,6 +8377,9 @@ Project CSS
 .project__area-item:hover .project__area-item-icon {
   visibility: visible;
   opacity: 1;
+}
+.project__area-page .project__area-item::after {
+  background: var(--primary-color-1);
 }
 
 /*==========================================================================
@@ -8606,101 +8551,6 @@ Portfolio Two CSS
 }
 
 /*==========================================================================
-Portfolio Three CSS
-==========================================================================*/
-.portfolio__three {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-}
-.portfolio__three-item {
-  position: relative;
-  z-index: 1;
-  padding: 40px;
-}
-.portfolio__three-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--primary-color-3);
-  opacity: 0;
-  transition: 0.4s;
-  border-radius: 6px;
-  z-index: -1;
-}
-.portfolio__three-item-icon {
-  margin-bottom: 350px;
-  text-align: right;
-  opacity: 0;
-  transition: 0.4s;
-}
-.portfolio__three-item-icon i {
-  color: var(--text-heading-color);
-  background: var(--bg-white);
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 6px;
-}
-.portfolio__three-item h4 {
-  color: var(--text-white);
-  opacity: 0;
-  transition: 0.4s;
-}
-.portfolio__three-item span {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: var(--heading-font);
-  color: var(--text-white);
-  transition: 0.4s;
-  opacity: 0;
-}
-.portfolio__three-item:hover::before {
-  opacity: 0.7;
-}
-.portfolio__three-item:hover h4 {
-  opacity: 1;
-}
-.portfolio__three-item:hover span {
-  opacity: 1;
-}
-.portfolio__three-item:hover .portfolio__three-item-icon {
-  opacity: 1;
-}
-.portfolio__three .portfolio-border {
-  position: relative;
-  z-index: 1;
-  padding: 30px;
-  border-right: 4px solid var(--border-white);
-}
-.portfolio__three .portfolio-border::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-heading-color);
-  transition: 0.4s;
-  opacity: 0;
-  border-radius: 6px;
-  z-index: -2;
-}
-.portfolio__three .portfolio-border:hover::after {
-  opacity: 0.8;
-}
-.portfolio__three .portfolio-border:last-child {
-  border: 0;
-}
-
-/*==========================================================================
 Filter CSS
 ==========================================================================*/
 .filter_button {
@@ -8774,6 +8624,7 @@ Project Filter CSS
   width: 100px;
   border-radius: 50%;
   background: var(--primary-color-1);
+  z-index: -1;
 }
 .project__one-item-content::after {
   content: "";
@@ -8866,12 +8717,6 @@ Project Details CSS
   }
 }
 @media (max-width: 1399px) {
-  .portfolio__three-item {
-    padding: 30px;
-  }
-  .portfolio__three-item-icon {
-    margin-bottom: 190px;
-  }
   .project__area-item-content {
     position: absolute;
     right: 30px;
@@ -8922,17 +8767,6 @@ Project Details CSS
   .portfolio-item-inner {
     left: 30px;
     bottom: 30px;
-  }
-  .portfolio__three {
-    border-left: 2px solid var(--border-white);
-    border-right: 2px solid var(--border-white);
-  }
-  .portfolio__three .portfolio-border {
-    border-right: 0;
-    border: 2px solid var(--border-white);
-  }
-  .portfolio__three .portfolio-border:last-child {
-    border: 2px solid var(--border-white);
   }
 }
 @media (max-width: 991px) {
@@ -9207,46 +9041,6 @@ Experience CSS
 .experience__area-right-title h2 {
   margin-bottom: 30px;
 }
-.experience__area-right .skill__area-item {
-  margin-bottom: 20px;
-}
-.experience__area-right .skill__area-item:last-child {
-  margin: 0;
-}
-.experience__area-right .skill__area-item .text-two {
-  font-weight: 700;
-}
-.experience__area-right .skill__area-item-content {
-  position: relative;
-}
-.experience__area-right .skill__area-item-count {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.experience__area-right .skill__area-item-inner {
-  width: 100%;
-  height: 8px;
-  position: relative;
-  background: var(--border-color-2);
-  margin-top: 10px;
-}
-.experience__area-right .skill__area-item-inner .skillbar-bar {
-  height: 8px;
-  position: absolute;
-  width: 0;
-  left: 0;
-  background: var(--primary-color-1);
-  transition: all 3.5s ease-out 0s;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
-  top: 0;
-  border-radius: 0;
-}
-.experience__area-right .skill__area-item-inner .skillbar-percent,
-.experience__area-right .skill__area-item-inner .skillbar-title {
-  display: none;
-}
 .experience__area-right .btn-two {
   background: var(--color-6);
   margin-top: 50px;
@@ -9254,6 +9048,52 @@ Experience CSS
 }
 .experience__area-right .btn-two:hover {
   color: var(--text-white);
+}
+
+.skill__area-item {
+  margin-bottom: 20px;
+}
+.skill__area-item:last-child {
+  margin: 0;
+}
+.skill__area-item .text-two {
+  font-weight: 700;
+}
+.skill__area-item-content {
+  position: relative;
+}
+.skill__area-item-count {
+  position: absolute;
+  top: -35px;
+  right: 0;
+}
+.skill__area-item-inner {
+  width: 100%;
+  height: 8px;
+  position: relative;
+  background: var(--border-color-2);
+  margin-top: 10px;
+}
+.skill__area-item-inner .skillbar-bar {
+  height: 8px;
+  position: absolute;
+  width: 0;
+  background: var(--primary-color-1);
+  transition: all 3.5s ease-out 0s;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+  top: 0;
+  border-radius: 0;
+}
+.skill__area-item-inner .skillbar-title {
+  height: 8px;
+  background: var(--primary-color-1);
+}
+.skill__area-item-inner .skillbar-title span {
+  display: none;
+}
+.skill__area-item-inner .skillbar-percent {
+  display: none;
 }
 
 @media (max-width: 1399px) {
@@ -10264,21 +10104,17 @@ News Standard CSS
   }
 }
 /*==========================================================================
-Conbix Contact CSS
+Contact CSS
 ==========================================================================*/
-.conbix-contact-item {
+.contact-item {
   position: relative;
 }
-.conbix-contact-item span {
+.contact-item span {
   position: absolute;
   right: 16px;
   top: 23px;
   color: var(--primary-color-1);
   font-weight: 400;
-}
-.conbix-contact-item input,
-.conbix-contact-item textarea {
-  font-size: 15px;
 }
 
 /*==========================================================================
@@ -11163,6 +10999,9 @@ All Footer CSS
 .all-footer .subscribe__area-form form button,
 .all-footer .subscribe__area-bg::after {
   background: var(--primary-color-1);
+}
+.all-footer .subscribe__area-left-notification-icon i {
+  color: var(--primary-color-1);
 }
 .all-footer .footer__two-widget-location-item-icon i {
   color: var(--primary-color-1);

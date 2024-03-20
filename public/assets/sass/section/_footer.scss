@@ -473,6 +473,9 @@ All Footer CSS
     .subscribe__area-bg::after {
         background: var(--primary-color-1);
     }
+    .subscribe__area-left-notification-icon i {
+        color: var(--primary-color-1);
+    }
     .footer__two {
         &-widget {
             &-location-item {

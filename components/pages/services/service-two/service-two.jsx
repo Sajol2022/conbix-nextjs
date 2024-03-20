@@ -1,49 +1,32 @@
-import React from 'react';
-import servicesData from '../../../data/services-data';
-import FaqTwo from '../../faq/faq-two';
-import Features from './features';
+import servicesData from '@/components/data/services-data';
 import Link from 'next/link';
-
-const servicesItem = servicesData.filter(service => service.inner !== service.home_page);
+import Testimonial from '../../homes/home/testimonial';
+import ServiceCta from './cta';
 
 const ServicesMain = () => {
-    const faqClass = {subtitle: 'subtitle-four',class: "faq__one-page section-padding"}
+    const servicesItem = servicesData;
     return (
         <>
-            <div className="services__page-two section-padding-two">
-                <div className="container">
-                    <div className="row">
-                        {servicesItem?.map((data, id) => (
-                            <div className="col-lg-4 col-md-6" key={id}>
-                                <div className="services__three-items">                        
-                                    <div className="two" style={{backgroundImage: `url(/assets/img/shape/services-5.png)`}}>
-                                        <span>{data.number}</span>
-                                        <div className="services__three-item-icon">
-                                            {data.icon}
-                                        </div>
-                                        <div className="services__three-item-content">
-                                            <h4><Link href={`/services/${data.id}`}>{data.title}</Link></h4>
-                                            <p>{data.description}</p>
-                                        </div>
-                                    </div>
-                                    <div className="services__three-item">
-                                        <span>{data.number}</span>
-                                        <div className="services__three-item-icon">
-                                            {data.icon}
-                                        </div>
-                                        <div className="services__three-item-content">
-                                            <h4><Link href={`/services/${data.id}`}>{data.title}</Link></h4>
-                                            <p>{data.description}</p>
-                                        </div>
-                                    </div>
+        <div className="services__page section-padding-two">
+            <div className="container">
+                <div className="row">
+                    {servicesItem?.map((data, id) => (
+                        <div className="col-lg-4 col-md-6 mt-25" key={id}>
+                            <div className="services__one-item">
+                                <div className="services__one-item-icon">
+                                    {data.icon}
                                 </div>
+                                <h4><Link href={`/services/${data.id}`}>{data.title}</Link></h4>
+                                <p>{data.description}</p>
+                                <Link className="simple-btn-2" href={`/services/${data.id}`}>Read More<i className="far fa-chevron-double-right"></i></Link>
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
-            <Features />
-            <FaqTwo faqClass={faqClass} />
+        </div>
+            <ServiceCta />
+            <Testimonial />
         </>
     );
 };
