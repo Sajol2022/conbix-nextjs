@@ -4,6 +4,7 @@ import HeaderOne from "@/components/layout/headers/header-one";
 import BreadCrumb from "../../common/breadcrumb";
 import ServicesMain from "./services";
 import FooterTwo from "@/components/layout/footers/footer-two";
+import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 const ServicePage = () => {
     return (
@@ -15,6 +16,7 @@ const ServicePage = () => {
             <div className='all-footer'>
                 <FooterTwo />
             </div>
+            <ScrollToTop />
         </>
     );
 };

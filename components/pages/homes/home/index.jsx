@@ -11,6 +11,7 @@ import GetInTouch from "./get-in-touch";
 import Blog from "./blog";
 import FooterOne from "@/components/layout/footers/footer-one";
 import BannerOne from "./banner";
+import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 const HomeOne = () => {
     return (
@@ -27,6 +28,7 @@ const HomeOne = () => {
             <GetInTouch />
             <Blog />
             <FooterOne />
+            <ScrollToTop />
         </div>
     );
 };

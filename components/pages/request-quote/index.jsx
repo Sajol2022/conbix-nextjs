@@ -4,6 +4,7 @@ import React from 'react';
 import BreadCrumb from '../common/breadcrumb';
 import FooterTwo from '@/components/layout/footers/footer-two';
 import RequestQuoteMain from './request-quote';
+import ScrollToTop from '../common/scroll/scroll-to-top';
 
 const RequestQuotePage = () => {
     return (
@@ -15,6 +16,7 @@ const RequestQuotePage = () => {
             <div className='all-footer'>
                 <FooterTwo />
             </div>
+            <ScrollToTop />
         </>
     );
 };

@@ -696,21 +696,21 @@ Scroll Top CSS
 		box-sizing:border-box;
 		transition: all 200ms linear;
 	}
-}
-.scroll-two {
-	&::after {
-		color: var(--primary-color-2);
+	&.two {
+		&::after {
+			color: var(--primary-color-2);
+		}
+		svg.scroll-circle path {
+			stroke: var(--primary-color-2);
+		}
 	}
-	svg.scroll-circle path {
-		stroke: var(--primary-color-2);
-	}
-}
-.scroll-three {
-	&::after {
-		color: var(--primary-color-3);
-	}
-	svg.scroll-circle path {
-		stroke: var(--primary-color-3);
+	&.three {
+		&::after {
+			color: var(--primary-color-3);
+		}
+		svg.scroll-circle path {
+			stroke: var(--primary-color-3);
+		}
 	}
 }
 /*==========================================================================

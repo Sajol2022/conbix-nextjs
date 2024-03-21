@@ -12,6 +12,7 @@ import Consulting from "./consulting";
 import Portfolio from "./portfolio";
 import Team from "./team";
 import Blog from "./blog";
+import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 const HomeTwo = ({addClass}) => {
     return (
@@ -29,6 +30,7 @@ const HomeTwo = ({addClass}) => {
             <Team />
             <Blog />
             <FooterTwo />
+            <ScrollToTop addClass={addClass} />
         </>
     );
 };

@@ -823,18 +823,16 @@ Scroll Top CSS
   box-sizing: border-box;
   transition: all 200ms linear;
 }
-
-.scroll-two::after {
+.scroll-up.two::after {
   color: var(--primary-color-2);
 }
-.scroll-two svg.scroll-circle path {
+.scroll-up.two svg.scroll-circle path {
   stroke: var(--primary-color-2);
 }
-
-.scroll-three::after {
+.scroll-up.three::after {
   color: var(--primary-color-3);
 }
-.scroll-three svg.scroll-circle path {
+.scroll-up.three svg.scroll-circle path {
   stroke: var(--primary-color-3);
 }
 

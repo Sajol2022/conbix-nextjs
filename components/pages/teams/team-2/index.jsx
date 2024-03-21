@@ -4,6 +4,7 @@ import HeaderOne from "@/components/layout/headers/header-one";
 import BreadCrumb from "../../common/breadcrumb";
 import TeamMain from "./team";
 import FooterTwo from "@/components/layout/footers/footer-two";
+import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 const TeamPageTwo = () => {
     return (
@@ -15,6 +16,7 @@ const TeamPageTwo = () => {
             <div className='all-footer'>
                 <FooterTwo />
             </div>
+            <ScrollToTop />
         </>
     );
 };

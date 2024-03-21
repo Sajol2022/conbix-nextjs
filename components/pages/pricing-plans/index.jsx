@@ -4,6 +4,7 @@ import HeaderOne from "@/components/layout/headers/header-one";
 import BreadCrumb from "../common/breadcrumb";
 import FooterTwo from "@/components/layout/footers/footer-two";
 import PricingPlansMain from "./pricing-plans";
+import ScrollToTop from "../common/scroll/scroll-to-top";
 
 const PricingPages = () => {
     return (
@@ -16,7 +17,8 @@ const PricingPages = () => {
             </div>
             <div className='all-footer'>
                 <FooterTwo />
-            </div>            
+            </div>    
+            <ScrollToTop />        
         </>
     );
 };

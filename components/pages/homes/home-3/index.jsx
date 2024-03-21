@@ -11,6 +11,7 @@ import Pricing from "./pricing";
 import Quote from "./quote";
 import Blog from "./blog";
 import BannerThree from "./banner";
+import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 const HomeThree = ({addClass}) => {
     return (
@@ -27,6 +28,7 @@ const HomeThree = ({addClass}) => {
             <Quote />
             <Blog />
             <FooterThree />
+            <ScrollToTop addClass={addClass} />
         </>
     );
 };

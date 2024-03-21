@@ -5,6 +5,7 @@ import HeaderOne from "@/components/layout/headers/header-one";
 import BreadCrumb from "../../common/breadcrumb";
 import BlogStandardMain from "./blog-standard";
 import FooterTwo from "@/components/layout/footers/footer-two";
+import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 
 const BlogStandardPage = () => {
@@ -17,6 +18,7 @@ const BlogStandardPage = () => {
             <div className='all-footer'>
                 <FooterTwo />
             </div>
+            <ScrollToTop />
         </>
     );
 };

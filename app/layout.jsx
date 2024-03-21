@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useEffect } from 'react';
 import "./globals.css";
 import SwitchTab from '@/components/pages/common/dark-light';

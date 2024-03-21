@@ -4,6 +4,7 @@ import HeaderOne from "@/components/layout/headers/header-one";
 import BreadCrumb from "../common/breadcrumb";
 import FooterTwo from "@/components/layout/footers/footer-two";
 import Form from "./form";
+import ScrollToTop from "../common/scroll/scroll-to-top";
 
 const ContactTwo = () => {
     return (
@@ -70,6 +71,7 @@ const ContactTwo = () => {
             <div className='all-footer'>
                 <FooterTwo />
             </div>
+            <ScrollToTop />
         </>
     );
 };

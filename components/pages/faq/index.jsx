@@ -4,6 +4,7 @@ import HeaderOne from "@/components/layout/headers/header-one";
 import BreadCrumb from "../common/breadcrumb";
 import FaqArea from "./faq";
 import FooterTwo from "@/components/layout/footers/footer-two";
+import ScrollToTop from "../common/scroll/scroll-to-top";
 
 const Faq = () => {
     return (
@@ -17,6 +18,7 @@ const Faq = () => {
             <div className='all-footer'>
                 <FooterTwo />
             </div>
+            <ScrollToTop />
         </>
     );
 };
