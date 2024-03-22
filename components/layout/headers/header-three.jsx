@@ -1,6 +1,4 @@
 "use client";
-import Social from '@/components/data/social';
-import Image from 'next/image';
 import Link from 'next/link';
 import logo1 from "../../../public/assets/img/logo-6.png";
 import logo2 from "../../../public/assets/img/logo-7.png";
@@ -41,8 +39,8 @@ const HeaderThree = () => {
                         <div className="header__area-menubar-left">
                             <div className="header__area-menubar-left-logo">
                                 <Link href='/'>
-                                    <Image className='dark-n' src={logo1} alt='logo' width="auto" priority />
-                                    <Image className="light-n" src={logo2} alt="logo" width="auto" priority />
+                                    <img className='dark-n' src={logo1.src} alt='logo' />
+                                    <img className="light-n" src={logo2.src} alt="logo" />
                                 </Link>
                             </div>
                         </div>
@@ -62,7 +60,7 @@ const HeaderThree = () => {
                                     <Search isOpen={search} setIsOpen={setSearch} />
                                 </div>
                                 <div className="header__area-menubar-right-box-btn">
-                                    <a className="btn-seven" href="request-quote.html">Get Started<i className="far fa-chevron-double-right"></i></a>
+                                    <Link className="btn-seven" href="/request-quote">Get Started<i className="far fa-chevron-double-right"></i></Link>
                                 </div>
                                 <div className="header__area-menubar-right-responsive-menu menu__bar">
                                     <i className="flaticon-menu" onClick={() => setMenuSidebar(true)}></i>

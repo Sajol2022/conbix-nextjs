@@ -10,17 +10,17 @@ const Blog = () => {
         btn_url: '/blog'
     }
     return (
-        <div className="blog__one dark__image section-padding">
+        <div className="blog__two dark__image section-padding">
             <div className="container">
                 <div className="row align-items-end mb-45">
                     <div className="col-xl-7 col-lg-8 lg-mb-30">
-                        <div className="blog__one-title lg-t-center">
+                        <div className="blog__two-title lg-t-center">
                             <span className="subtitle-two">{blogContent.subtitle}</span>
                             <h2>{blogContent.title}</h2>
                         </div>
                     </div>
                     <div className="col-xl-5 col-lg-4 t-right lg-t-center">
-                        <Link className="btn-two" href={blogContent.btn_url}>{blogContent.btn_text}<i className="far fa-chevron-double-right"></i></Link>
+                        <Link className="btn-six" href={blogContent.btn_url}>{blogContent.btn_text}<i className="far fa-chevron-double-right"></i></Link>
                     </div>
                 </div>
                 <div className="row">

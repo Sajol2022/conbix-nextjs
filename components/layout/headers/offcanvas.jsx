@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import logo2 from "../../../public/assets/img/logo-2.png";
 import Social from '@/components/data/social';
@@ -10,7 +9,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
                 <div className="sidebar-close-btn" onClick={() => setIsOpen(false)}><i className="fal fa-times"></i></div>
                 <div className="header__area-menubar-right-sidebar-popup-logo">
                 <Link href='/'>
-                    <Image src={logo2} alt="logo" width="auto" priority />
+                    <img src={logo2.src} alt="logo" />
                 </Link>
                 </div>
                 <p>Morbi et tellus imperdiet, aliquam nulla sed, dapibus erat. Aenean dapibus sem non purus venenatis vulputate. Donec accumsan eleifend blandit. Nullam auctor ligula</p>

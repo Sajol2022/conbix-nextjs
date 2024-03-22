@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import portfolioData from '../../../data/portfolio-data';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const showPortfolioItem = 4;
 

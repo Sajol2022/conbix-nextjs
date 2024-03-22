@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const PricingPlansMain = () => {
@@ -24,7 +25,7 @@ const PricingPlansMain = () => {
 								<li><i className="fal fa-times"></i>Human Research</li>                                
 							</ul>
 						</div>
-						<a className="btn-eight" href="request-quote.html">Get Started</a>
+						<Link className="btn-eight" href="/request-quote">Get Started</Link>
 					</div>
 				</div>
 				<div className="col-xl-4 col-lg-6 col-md-6 md-mb-30">
@@ -46,7 +47,7 @@ const PricingPlansMain = () => {
 								<li><i className="fal fa-check"></i>Human Research</li>                                
 							</ul>
 						</div>
-						<a className="btn-eight" href="request-quote.html">Get Started</a>
+						<Link className="btn-eight" href="/request-quote">Get Started</Link>
 					</div>
 				</div>
 				<div className="col-xl-4 col-lg-6 col-md-6">
@@ -68,7 +69,7 @@ const PricingPlansMain = () => {
 								<li><i className="fal fa-check"></i>Human Research</li>                                
 							</ul>
 						</div>
-						<a className="btn-eight" href="request-quote.html">Get Started</a>
+						<Link className="btn-eight" href="/request-quote">Get Started</Link>
 					</div>
 				</div>
 			</div>
