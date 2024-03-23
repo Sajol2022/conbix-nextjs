@@ -22,7 +22,7 @@ const History = () => {
                         <div className="company__history-area dark__image">
                             <div className="company__history-area-item">
                                 <div className="company__history-area-item-left">
-                                    <img src={image1} alt="image" />
+                                    <img src={image1.src} alt="image" />
                                 </div>
                                 <div className="company__history-area-item-right">
                                     <div className="company__history-area-item-right-content mb-50 xl-mb-30">
@@ -46,14 +46,14 @@ const History = () => {
                                 </div>
                                 <div className="company__history-area-items-right">
                                     <div className="company__history-area-items-right-image">
-                                        <img src={image2} alt="image" />
+                                        <img src={image2.src} alt="image" />
                                     </div>
                                 </div>
                             </div>
                             <div className="company__history-area-item">
                                 <div className="company__history-area-item-left">
                                     <div className="company__history-area-item-left-image">
-                                        <img src={image3} alt="image" />
+                                        <img src={image3.src} alt="image" />
                                     </div>
                                 </div>
                                 <div className="company__history-area-item-right">
@@ -78,20 +78,20 @@ const History = () => {
                                 </div>
                                 <div className="company__history-area-items-right">
                                     <div className="company__history-area-items-right-image">
-                                        <img src={image4} alt="imafe" />
+                                        <img src={image4.src} alt="imafe" />
                                     </div>
                                 </div>
                             </div>
                             <div className="company__history-area-item">
                                 <div className="company__history-area-item-left">
                                     <div className="company__history-area-item-left-image">
-                                        <img src={image5} alt="imafe" />
+                                        <img src={image5.src} alt="imafe" />
                                     </div>
                                 </div>
                                 <div className="company__history-area-item-right">
                                     <div className="company__history-area-item-right-content">
                                         <div className="company__history-area-item-right-content-date">
-                                            <span>2023</span>
+                                            <span>2024</span>
                                             <h5>Winning Award</h5>
                                         </div>
                                         <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
