@@ -118,6 +118,8 @@ FAQ Two CSS
         padding: 50px;
         display: none; 
         transform: translateX(-100%);
+        scrollbar-width: none;
+        overflow: auto;
         &.show {
             opacity: 1;
             visibility: visible;

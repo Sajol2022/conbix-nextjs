@@ -29,7 +29,7 @@ const ResponsiveMenu = () => {
         <li className='menu-item-has-children'>
             <Link href='#'>Pages</Link>
             <ul className='sub-menu' style={activeSubMenu("pages")}>
-                <li><Link href='/about'>About Us</Link></li>
+                <li><Link href='/about-us'>About Us</Link></li>
                 <li><Link href='/pricing-plans'>Price Plans</Link></li>
                 <li><Link href='/faq'>FAQ's</Link></li>
                 <li><Link href='/testimonial'>Testimonials</Link></li>
@@ -52,7 +52,7 @@ const ResponsiveMenu = () => {
             <ul className='sub-menu' style={activeSubMenu("services")}>
 				<li><Link href='/services'>Services 01</Link></li>
 				<li><Link href='/services-two'>Services 02</Link></li>
-				<li><Link href='/services/farm-insurance'>Services Details</Link></li>
+                <li><Link href='/services/business-model'>Services Details</Link></li>
 			</ul>
             <a className={`mean-expand ${activeIcon("services")}`} onClick={() => active("services")}></a>
 		</li>

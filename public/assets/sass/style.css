@@ -8196,6 +8196,8 @@ FAQ Two CSS
   padding: 50px;
   display: none;
   transform: translateX(-100%);
+  scrollbar-width: none;
+  overflow: auto;
 }
 .menu__bar-popup.show {
   opacity: 1;
