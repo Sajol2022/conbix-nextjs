@@ -41,7 +41,7 @@ const BlogStandardMain = () => {
                                                 <li><a href="#"><i className="fal fa-comment-dots"></i>{data.comment} Comment</a></li>
                                             </ul>
                                         </div>
-                                        <h3 className="mb-10"><a href={`/blog/${data.id}`}>{data.title}</a></h3>
+                                        <h3 className="mb-10"><Link href={`/blog/${data.id}`}>{data.title}</Link></h3>
                                         <p>{data.des}. Look out into the Manhattan skyline from the open fully equipped kitchen.</p>                        
                                         <Link className="btn-one" href={`/blog/${data.id}`}>Read Details</Link>
                                     </div> 
