@@ -3774,7 +3774,7 @@ Menu Bar CSS
   color: var(--primary-color-2);
 }
 .header__area-menubar-center-menu.two ul li a {
-  padding: 31px 32px;
+  padding: 30px 32px;
 }
 .header__area-menubar-center-menu.two ul li.menu-item-has-children:hover > a::after {
   background: var(--primary-color-2);
