@@ -86,7 +86,7 @@ const FooterTwo = () => {
                                         </div>
                                         <div className="post__item-title">
                                             <span><i className="far fa-calendar-alt"></i>Mar {data.date}, 2024</span>
-                                            <h6><a href={`/blog/${data.id}`}>{data.title}</a></h6>
+                                            <h6><Link href={`/blog/${data.id}`}>{data.title}</Link></h6>
                                         </div>
                                     </div>
                                 ))}
